@@ -30,6 +30,11 @@ extension Container {
             .cached
     }
 
+    var discoverViewModel: Factory<DiscoverViewModel> {
+        self { DiscoverViewModel(wordDataService: self.wordDataService()) }
+            .cached
+    }
+
     var soundManager: Factory<SoundManager> {
         self { SoundManager() }
             .singleton

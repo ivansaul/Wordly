@@ -20,6 +20,8 @@
 		C74052792D6B15610051E229 /* WordDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74052782D6B15610051E229 /* WordDetailsView.swift */; };
 		C740527B2D6B20F50051E229 /* MeaningsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740527A2D6B20F50051E229 /* MeaningsView.swift */; };
 		C740527D2D6B21FF0051E229 /* PhoneticRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740527C2D6B21FF0051E229 /* PhoneticRowView.swift */; };
+		C74E5B0F2D6C523E002C01A2 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E5B0E2D6C523E002C01A2 /* DiscoverView.swift */; };
+		C74E5B112D6C5501002C01A2 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E5B102D6C5501002C01A2 /* DiscoverViewModel.swift */; };
 		C78286622D6B437C00E17F5D /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = C78286612D6B437C00E17F5D /* words.json */; };
 		C7B24F242D6BF08D00649242 /* WordRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B24F232D6BF08D00649242 /* WordRowView.swift */; };
 		C7B24F272D6BF43A00649242 /* SectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B24F262D6BF43A00649242 /* SectionContainer.swift */; };
@@ -28,6 +30,7 @@
 		C7B24F2F2D6C025800649242 /* WordDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B24F2E2D6C025800649242 /* WordDataService.swift */; };
 		C7B24F322D6C03AF00649242 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C7B24F312D6C03AF00649242 /* AsyncAlgorithms */; };
 		C7E53EB12D6C3ED900451DA7 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E53EB02D6C3ED900451DA7 /* SoundManager.swift */; };
+		C7E53EB32D6C49C300451DA7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E53EB22D6C49C300451DA7 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,8 @@
 		C74052782D6B15610051E229 /* WordDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailsView.swift; sourceTree = "<group>"; };
 		C740527A2D6B20F50051E229 /* MeaningsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningsView.swift; sourceTree = "<group>"; };
 		C740527C2D6B21FF0051E229 /* PhoneticRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticRowView.swift; sourceTree = "<group>"; };
+		C74E5B0E2D6C523E002C01A2 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		C74E5B102D6C5501002C01A2 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
 		C78286612D6B437C00E17F5D /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 		C7B24F232D6BF08D00649242 /* WordRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRowView.swift; sourceTree = "<group>"; };
 		C7B24F262D6BF43A00649242 /* SectionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContainer.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		C7B24F2A2D6BFBCE00649242 /* ExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesView.swift; sourceTree = "<group>"; };
 		C7B24F2E2D6C025800649242 /* WordDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDataService.swift; sourceTree = "<group>"; };
 		C7E53EB02D6C3ED900451DA7 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		C7E53EB22D6C49C300451DA7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +145,19 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		C74E5B0D2D6C5228002C01A2 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				C74E5B0E2D6C523E002C01A2 /* DiscoverView.swift */,
+				C74E5B102D6C5501002C01A2 /* DiscoverViewModel.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
 		C7B24F1F2D6BEADD00649242 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C74E5B0D2D6C5228002C01A2 /* Discover */,
 				C7B24F212D6BEB0600649242 /* Explore */,
 				C7B24F2C2D6C017D00649242 /* Root */,
 			);
@@ -192,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				C74052522D6AE2930051E229 /* ContentView.swift */,
+				C7E53EB22D6C49C300451DA7 /* MainTabView.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -288,14 +305,17 @@
 				C74052722D6B07160051E229 /* ExplorerViewModel.swift in Sources */,
 				C740527B2D6B20F50051E229 /* MeaningsView.swift in Sources */,
 				C74052682D6AE7A50051E229 /* PreviewData.swift in Sources */,
+				C74E5B0F2D6C523E002C01A2 /* DiscoverView.swift in Sources */,
 				C7B24F272D6BF43A00649242 /* SectionContainer.swift in Sources */,
 				C740527D2D6B21FF0051E229 /* PhoneticRowView.swift in Sources */,
 				C74052772D6B0A050051E229 /* View.swift in Sources */,
 				C7B24F2F2D6C025800649242 /* WordDataService.swift in Sources */,
+				C7E53EB32D6C49C300451DA7 /* MainTabView.swift in Sources */,
 				C7B24F2B2D6BFBCE00649242 /* ExamplesView.swift in Sources */,
 				C74052532D6AE2930051E229 /* ContentView.swift in Sources */,
 				C74052662D6AE7770051E229 /* Word.swift in Sources */,
 				C74052792D6B15610051E229 /* WordDetailsView.swift in Sources */,
+				C74E5B112D6C5501002C01A2 /* DiscoverViewModel.swift in Sources */,
 				C7B24F242D6BF08D00649242 /* WordRowView.swift in Sources */,
 				C74052512D6AE2930051E229 /* WordlyApp.swift in Sources */,
 				C74052622D6AE5C00051E229 /* ExplorerView.swift in Sources */,
