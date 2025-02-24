@@ -27,6 +27,7 @@
 		C7B24F2B2D6BFBCE00649242 /* ExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B24F2A2D6BFBCE00649242 /* ExamplesView.swift */; };
 		C7B24F2F2D6C025800649242 /* WordDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B24F2E2D6C025800649242 /* WordDataService.swift */; };
 		C7B24F322D6C03AF00649242 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C7B24F312D6C03AF00649242 /* AsyncAlgorithms */; };
+		C7E53EB12D6C3ED900451DA7 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E53EB02D6C3ED900451DA7 /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		C7B24F282D6BF95200649242 /* ExampleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRowView.swift; sourceTree = "<group>"; };
 		C7B24F2A2D6BFBCE00649242 /* ExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesView.swift; sourceTree = "<group>"; };
 		C7B24F2E2D6C025800649242 /* WordDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDataService.swift; sourceTree = "<group>"; };
+		C7E53EB02D6C3ED900451DA7 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		C740527E2D6B2AE50051E229 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C7E53EB02D6C3ED900451DA7 /* SoundManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B24F292D6BF95200649242 /* ExampleRowView.swift in Sources */,
+				C7E53EB12D6C3ED900451DA7 /* SoundManager.swift in Sources */,
 				C74052722D6B07160051E229 /* ExplorerViewModel.swift in Sources */,
 				C740527B2D6B20F50051E229 /* MeaningsView.swift in Sources */,
 				C74052682D6AE7A50051E229 /* PreviewData.swift in Sources */,

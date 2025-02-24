@@ -29,4 +29,9 @@ extension Container {
         self { ExplorerViewModel(wordDataService: self.wordDataService()) }
             .cached
     }
+
+    var soundManager: Factory<SoundManager> {
+        self { SoundManager() }
+            .singleton
+    }
 }
