@@ -7,6 +7,7 @@
 //  https://github.com/ivansaul
 //
 
+import Factory
 import SwiftUI
 
 @main
@@ -15,5 +16,17 @@ struct WordlyApp: App {
         WindowGroup {
             ContentView()
         }
+    }
+}
+
+extension Container {
+    var wordDataService: Factory<WordDataServiceProtocol> {
+        self { WordDataService() }
+            .singleton
+    }
+
+    var explorerViewModel: Factory<ExplorerViewModel> {
+        self { ExplorerViewModel(wordDataService: self.wordDataService()) }
+            .cached
     }
 }
