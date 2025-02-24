@@ -7,9 +7,12 @@
 //  https://github.com/ivansaul
 //
 
+import Factory
 import SwiftUI
 
 struct PhoneticRowView: View {
+    @Injected(\.soundManager) private var soundManager
+
     let name: String
     let value: String
     let audio: String
@@ -26,14 +29,16 @@ struct PhoneticRowView: View {
 
             Text("[\(value)]")
 
-            Button(action: {
-                // TODO: implement audio manager
-            }, label: {
+            Button(action: playSound, label: {
                 Image(systemName: "waveform")
                     .foregroundStyle(.blue)
                     .padding(.horizontal)
             })
         }
+    }
+
+    private func playSound() {
+        soundManager.playSound(url: audio)
     }
 }
 
