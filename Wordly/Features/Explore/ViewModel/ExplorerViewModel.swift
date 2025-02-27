@@ -60,7 +60,7 @@ final class ExplorerViewModel {
         }
 
         return words.filter { word in
-            word.word.contains(query)
+            word.value.contains(query)
         }
     }
 

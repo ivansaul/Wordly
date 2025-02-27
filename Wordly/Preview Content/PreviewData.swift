@@ -23,9 +23,10 @@ extension Word {
 }
 
 extension Example {
-    static let mock: Example = Word.mock.examples.first!
+    static let mock: Example = Word.mock.examples?.first!
+        ?? Example(en: "Hello, world", es: "Hola, mundo")
 }
 
 extension [Example] {
-    static let mock: [Example] = Word.mock.examples
+    static let mock: [Example] = Word.mock.examples ?? []
 }

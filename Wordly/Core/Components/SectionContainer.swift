@@ -31,7 +31,7 @@ struct SectionContainer<Content: View>: View {
 #Preview {
     ZStack {
         SectionContainer(title: "Meanings") {
-            Text(Word.mock.meanings.joined(separator: ", "))
+            Text(Word.mock.meaning.value.joined(separator: ", "))
         }
     }.backgroundApp()
 }

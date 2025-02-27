@@ -15,18 +15,20 @@ struct WordDetailsView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                PhoneticRowView(name: "us", value: word.ipa.us, audio: word.audio.us)
+                PhoneticRowView(name: "us", value: word.transcription.us, audio: word.sound.us)
 
-                PhoneticRowView(name: "uk", value: word.ipa.uk, audio: word.audio.uk)
+                PhoneticRowView(name: "uk", value: word.transcription.uk, audio: word.sound.uk)
 
-                MeaningsView(meanings: word.meanings)
+                MeaningsView(meanings: word.meaning.value)
 
-                ExamplesView(examples: word.examples)
+                if let examples = word.examples {
+                    ExamplesView(examples: examples)
+                }
             }
             .padding()
         }
         .backgroundApp()
-        .navigationTitle(word.word.capitalized)
+        .navigationTitle(word.value.capitalized)
     }
 }
 

@@ -44,8 +44,16 @@ struct PhoneticRowView: View {
 
 #Preview {
     VStack {
-        PhoneticRowView(name: "us", value: Word.mock.ipa.us, audio: Word.mock.audio.us)
-        PhoneticRowView(name: "uk", value: Word.mock.ipa.uk, audio: Word.mock.audio.uk)
+        PhoneticRowView(
+            name: "us",
+            value: Word.mock.transcription.us,
+            audio: Word.mock.sound.us
+        )
+        PhoneticRowView(
+            name: "uk",
+            value: Word.mock.transcription.uk,
+            audio: Word.mock.sound.uk
+        )
     }
     .backgroundApp()
 }

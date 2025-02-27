@@ -12,17 +12,13 @@ import SwiftUI
 struct WordRowView: View {
     let word: Word
 
-    private var meanings: String {
-        self.word.meanings.joined(separator: ", ")
-    }
-
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 0) {
-                Text(self.word.word)
+                Text(self.word.value)
                     .font(.headline)
 
-                    + Text(" [\(self.word.ipa.us)]")
+                    + Text(" [\(self.word.transcription.us)]")
                     .foregroundStyle(Color(uiColor: .systemBlue))
                     .font(.callout)
 
@@ -39,6 +35,10 @@ struct WordRowView: View {
         }
         .padding()
         .roundedBackground()
+    }
+
+    private var meanings: String {
+        self.word.meaning.value.joined(separator: ", ")
     }
 }
 

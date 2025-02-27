@@ -17,7 +17,7 @@ struct ExampleRowView: View {
     var body: some View {
         HStack(alignment: .top) {
             VStack(alignment: .leading) {
-                Text(example.en)
+                Text(.init(enExample))
                     .font(.subheadline)
 
                 if showTranslation {
@@ -43,6 +43,10 @@ struct ExampleRowView: View {
                     .animation(.spring)
             })
         }
+    }
+
+    private var enExample: String {
+        example.en.htmlToMarkdown()
     }
 }
 

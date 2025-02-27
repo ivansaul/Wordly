@@ -26,7 +26,7 @@ struct MeaningsView: View {
 
 #Preview {
     ZStack {
-        MeaningsView(meanings: Word.mock.meanings)
+        MeaningsView(meanings: Word.mock.meaning.value)
     }
     .backgroundApp()
 }
