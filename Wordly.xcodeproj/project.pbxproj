@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C72CEDAA2D712CB500D969D2 /* DefinitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CEDA92D712CB500D969D2 /* DefinitionsView.swift */; };
+		C72CEDAC2D712D1F00D969D2 /* TranslationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CEDAB2D712D1F00D969D2 /* TranslationsView.swift */; };
 		C74052512D6AE2930051E229 /* WordlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74052502D6AE2930051E229 /* WordlyApp.swift */; };
 		C74052532D6AE2930051E229 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74052522D6AE2930051E229 /* ContentView.swift */; };
 		C74052552D6AE2940051E229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74052542D6AE2940051E229 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C72CEDA92D712CB500D969D2 /* DefinitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsView.swift; sourceTree = "<group>"; };
+		C72CEDAB2D712D1F00D969D2 /* TranslationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationsView.swift; sourceTree = "<group>"; };
 		C740524D2D6AE2930051E229 /* Wordly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74052502D6AE2930051E229 /* WordlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordlyApp.swift; sourceTree = "<group>"; };
 		C74052522D6AE2930051E229 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,9 +119,11 @@
 		C740525E2D6AE5900051E229 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C72CEDA92D712CB500D969D2 /* DefinitionsView.swift */,
 				C7B24F2A2D6BFBCE00649242 /* ExamplesView.swift */,
 				C74052612D6AE5C00051E229 /* ExplorerView.swift */,
 				C740527A2D6B20F50051E229 /* MeaningsView.swift */,
+				C72CEDAB2D712D1F00D969D2 /* TranslationsView.swift */,
 				C74052782D6B15610051E229 /* WordDetailsView.swift */,
 			);
 			path = View;
@@ -313,7 +319,9 @@
 				C7B24F272D6BF43A00649242 /* SectionContainer.swift in Sources */,
 				C740527D2D6B21FF0051E229 /* PhoneticRowView.swift in Sources */,
 				C74052772D6B0A050051E229 /* View.swift in Sources */,
+				C72CEDAC2D712D1F00D969D2 /* TranslationsView.swift in Sources */,
 				C7B24F2F2D6C025800649242 /* WordDataService.swift in Sources */,
+				C72CEDAA2D712CB500D969D2 /* DefinitionsView.swift in Sources */,
 				C7E53EB32D6C49C300451DA7 /* MainTabView.swift in Sources */,
 				C7B24F2B2D6BFBCE00649242 /* ExamplesView.swift in Sources */,
 				C74052532D6AE2930051E229 /* ContentView.swift in Sources */,

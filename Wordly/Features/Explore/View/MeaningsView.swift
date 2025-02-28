@@ -19,7 +19,6 @@ struct MeaningsView: View {
     var body: some View {
         SectionContainer(title: "Meanings") {
             Text(meaningsString)
-                .font(.subheadline)
         }
     }
 }

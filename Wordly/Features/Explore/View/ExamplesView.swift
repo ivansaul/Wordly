@@ -15,7 +15,7 @@ struct ExamplesView: View {
     let examples: [Example]
 
     var body: some View {
-        SectionContainer(title: "Examples") {
+        SectionContainer {
             VStack {
                 ForEach(examples, id: \.self) { example in
                     ExampleRowView(example: example)
