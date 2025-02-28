@@ -21,17 +21,17 @@ struct PhoneticRowView: View {
         HStack {
             Text(name)
                 .foregroundStyle(.white)
-                .font(.headline)
+                .font(.subheadline)
                 .padding(.horizontal, 8)
                 .padding(.vertical, 4)
-                .background(.blue)
+                .background(Color(uiColor: .systemBlue))
                 .clipShape(RoundedRectangle(cornerRadius: 8))
 
             Text("[\(value)]")
 
             Button(action: playSound, label: {
                 Image(systemName: "waveform")
-                    .foregroundStyle(.blue)
+                    .foregroundStyle(Color(uiColor: .systemBlue))
                     .padding(.horizontal)
             })
         }

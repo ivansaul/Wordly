@@ -10,15 +10,22 @@
 import SwiftUI
 
 struct SectionContainer<Content: View>: View {
-    let title: String
+    let title: String?
 
     @ViewBuilder let content: () -> Content
 
+    init(title: String? = nil, content: @escaping () -> Content) {
+        self.title = title
+        self.content = content
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(title)
-                .font(.subheadline)
-                .foregroundStyle(Color(uiColor: .systemGray))
+            if let title {
+                Text(title)
+                    .font(.subheadline)
+                    .foregroundStyle(Color(uiColor: .systemGray))
+            }
 
             content()
         }
@@ -30,8 +37,14 @@ struct SectionContainer<Content: View>: View {
 
 #Preview {
     ZStack {
-        SectionContainer(title: "Meanings") {
-            Text(Word.mock.meaning.value.joined(separator: ", "))
+        VStack {
+            SectionContainer(title: "Meanings") {
+                Text(Word.mock.meaning.value.joined(separator: ", "))
+            }
+
+            SectionContainer {
+                Text(Word.mock.meaning.value.joined(separator: ", "))
+            }
         }
     }.backgroundApp()
 }

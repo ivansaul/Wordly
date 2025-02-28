@@ -18,12 +18,12 @@ struct ExampleRowView: View {
         HStack(alignment: .top) {
             VStack(alignment: .leading) {
                 Text(.init(enExample))
-                    .font(.subheadline)
 
                 if showTranslation {
                     Text(example.es)
                         .foregroundStyle(Color(uiColor: .systemGray))
                         .font(.subheadline)
+                        .italic()
                 }
             }
             .onTapGesture {
@@ -39,8 +39,11 @@ struct ExampleRowView: View {
                     showTranslation.toggle()
                 }
             }, label: {
-                Image(systemName: showTranslation ? "chevron.up.circle" : "chevron.down.circle")
-                    .animation(.spring)
+                Image(systemName: showTranslation
+                    ? "chevron.up.circle"
+                    : "chevron.down.circle"
+                )
+                .animation(.spring)
             })
         }
     }
