@@ -117,8 +117,8 @@ extension VerbConjugationView {
     private var expandButton: some View {
         Button(action: toggleDetails, label: {
             Image(systemName: isExpanded
-                ? "chevron.up.circle.fill"
-                : "chevron.down.circle.fill"
+                ? "chevron.up.circle"
+                : "chevron.down.circle"
             )
         })
         .padding(.top, 30)
