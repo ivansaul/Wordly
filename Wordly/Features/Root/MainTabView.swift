@@ -17,13 +17,13 @@ struct MainTabView: View {
             NavigationStack {
                 ExplorerView()
             }
-            .tabItem { Label("Explore", systemImage: "scope") }
+            .tabItem { Label("Explore", systemImage: "textformat.size.larger") }
             .tag(0)
 
             NavigationStack {
                 DiscoverView()
             }
-            .tabItem { Label("Discover", systemImage: "clock.arrow.2.circlepath") }
+            .tabItem { Label("Discover", systemImage: "scope") }
             .tag(1)
         }
     }
