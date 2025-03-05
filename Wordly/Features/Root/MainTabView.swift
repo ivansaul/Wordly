@@ -25,6 +25,12 @@ struct MainTabView: View {
             }
             .tabItem { Label("Discover", systemImage: "scope") }
             .tag(1)
+
+            NavigationStack {
+                IrregularVerbsView()
+            }
+            .tabItem { Label("Irregulars", systemImage: "scribble.variable") }
+            .tag(2)
         }
     }
 }

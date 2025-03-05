@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70751BA2D76310800C9A7E0 /* IrregularVerbsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70751B92D76310800C9A7E0 /* IrregularVerbsView.swift */; };
 		C72CEDAA2D712CB500D969D2 /* DefinitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CEDA92D712CB500D969D2 /* DefinitionsView.swift */; };
 		C72CEDAC2D712D1F00D969D2 /* TranslationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CEDAB2D712D1F00D969D2 /* TranslationsView.swift */; };
 		C74052512D6AE2930051E229 /* WordlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74052502D6AE2930051E229 /* WordlyApp.swift */; };
@@ -30,13 +31,20 @@
 		C7B24F2B2D6BFBCE00649242 /* ExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B24F2A2D6BFBCE00649242 /* ExamplesView.swift */; };
 		C7B24F2F2D6C025800649242 /* WordDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B24F2E2D6C025800649242 /* WordDataService.swift */; };
 		C7B24F322D6C03AF00649242 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C7B24F312D6C03AF00649242 /* AsyncAlgorithms */; };
+		C7CD89F22D77A0F000C31B0F /* SoundButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD89F12D77A0F000C31B0F /* SoundButtonView.swift */; };
+		C7CD89F62D77D72D00C31B0F /* VerbConjugationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD89F52D77D72D00C31B0F /* VerbConjugationView.swift */; };
+		C7CD89F92D77E55D00C31B0F /* VerbsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD89F82D77E55D00C31B0F /* VerbsViewModel.swift */; };
+		C7CD89FC2D77E67A00C31B0F /* VerbDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD89FB2D77E67A00C31B0F /* VerbDataService.swift */; };
 		C7E53EB12D6C3ED900451DA7 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E53EB02D6C3ED900451DA7 /* SoundManager.swift */; };
 		C7E53EB32D6C49C300451DA7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E53EB22D6C49C300451DA7 /* MainTabView.swift */; };
+		C7EE3B6C2D76B8DF0008352B /* IrreVerbs.json in Resources */ = {isa = PBXBuildFile; fileRef = C7EE3B6B2D76B8DF0008352B /* IrreVerbs.json */; };
+		C7EE3B6E2D76B9150008352B /* Verb.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EE3B6D2D76B9150008352B /* Verb.swift */; };
 		C7F9A0C62D6FF93700851353 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = C7F9A0C52D6FF93700851353 /* words.json */; };
 		C7F9A0C82D70091C00851353 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9A0C72D70091C00851353 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C70751B92D76310800C9A7E0 /* IrregularVerbsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularVerbsView.swift; sourceTree = "<group>"; };
 		C72CEDA92D712CB500D969D2 /* DefinitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsView.swift; sourceTree = "<group>"; };
 		C72CEDAB2D712D1F00D969D2 /* TranslationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationsView.swift; sourceTree = "<group>"; };
 		C740524D2D6AE2930051E229 /* Wordly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,8 +67,14 @@
 		C7B24F282D6BF95200649242 /* ExampleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRowView.swift; sourceTree = "<group>"; };
 		C7B24F2A2D6BFBCE00649242 /* ExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesView.swift; sourceTree = "<group>"; };
 		C7B24F2E2D6C025800649242 /* WordDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDataService.swift; sourceTree = "<group>"; };
+		C7CD89F12D77A0F000C31B0F /* SoundButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButtonView.swift; sourceTree = "<group>"; };
+		C7CD89F52D77D72D00C31B0F /* VerbConjugationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbConjugationView.swift; sourceTree = "<group>"; };
+		C7CD89F82D77E55D00C31B0F /* VerbsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbsViewModel.swift; sourceTree = "<group>"; };
+		C7CD89FB2D77E67A00C31B0F /* VerbDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbDataService.swift; sourceTree = "<group>"; };
 		C7E53EB02D6C3ED900451DA7 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		C7E53EB22D6C49C300451DA7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		C7EE3B6B2D76B8DF0008352B /* IrreVerbs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IrreVerbs.json; sourceTree = "<group>"; };
+		C7EE3B6D2D76B9150008352B /* Verb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verb.swift; sourceTree = "<group>"; };
 		C7F9A0C52D6FF93700851353 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 		C7F9A0C72D70091C00851353 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +92,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70751B82D7630D000C9A7E0 /* IrreVerbs */ = {
+			isa = PBXGroup;
+			children = (
+				C7CD89F42D77D4C300C31B0F /* Model */,
+				C7CD89F32D77D4B800C31B0F /* View */,
+				C7CD89F72D77E42C00C31B0F /* ViewModel */,
+				C7CD89FA2D77E63400C31B0F /* Service */,
+			);
+			path = IrreVerbs;
+			sourceTree = "<group>";
+		};
 		C74052442D6AE2930051E229 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +137,7 @@
 				C74052572D6AE2940051E229 /* Preview Assets.xcassets */,
 				C74052672D6AE7A50051E229 /* PreviewData.swift */,
 				C7F9A0C52D6FF93700851353 /* words.json */,
+				C7EE3B6B2D76B8DF0008352B /* IrreVerbs.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -167,6 +193,7 @@
 			children = (
 				C74E5B0D2D6C5228002C01A2 /* Discover */,
 				C7B24F212D6BEB0600649242 /* Explore */,
+				C70751B82D7630D000C9A7E0 /* IrreVerbs */,
 				C7B24F2C2D6C017D00649242 /* Root */,
 			);
 			path = Features;
@@ -205,10 +232,11 @@
 		C7B24F252D6BF41600649242 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C7B24F282D6BF95200649242 /* ExampleRowView.swift */,
 				C740527C2D6B21FF0051E229 /* PhoneticRowView.swift */,
 				C7B24F262D6BF43A00649242 /* SectionContainer.swift */,
+				C7CD89F12D77A0F000C31B0F /* SoundButtonView.swift */,
 				C7B24F232D6BF08D00649242 /* WordRowView.swift */,
-				C7B24F282D6BF95200649242 /* ExampleRowView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -226,6 +254,39 @@
 			isa = PBXGroup;
 			children = (
 				C7B24F2E2D6C025800649242 /* WordDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C7CD89F32D77D4B800C31B0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C70751B92D76310800C9A7E0 /* IrregularVerbsView.swift */,
+				C7CD89F52D77D72D00C31B0F /* VerbConjugationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7CD89F42D77D4C300C31B0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7EE3B6D2D76B9150008352B /* Verb.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7CD89F72D77E42C00C31B0F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7CD89F82D77E55D00C31B0F /* VerbsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7CD89FA2D77E63400C31B0F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C7CD89FB2D77E67A00C31B0F /* VerbDataService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -298,6 +359,7 @@
 			files = (
 				C74052582D6AE2940051E229 /* Preview Assets.xcassets in Resources */,
 				C74052552D6AE2940051E229 /* Assets.xcassets in Resources */,
+				C7EE3B6C2D76B8DF0008352B /* IrreVerbs.json in Resources */,
 				C7F9A0C62D6FF93700851353 /* words.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,8 +373,14 @@
 			files = (
 				C7B24F292D6BF95200649242 /* ExampleRowView.swift in Sources */,
 				C7E53EB12D6C3ED900451DA7 /* SoundManager.swift in Sources */,
+				C7EE3B6E2D76B9150008352B /* Verb.swift in Sources */,
+				C7CD89F22D77A0F000C31B0F /* SoundButtonView.swift in Sources */,
+				C7CD89FC2D77E67A00C31B0F /* VerbDataService.swift in Sources */,
+				C7CD89F92D77E55D00C31B0F /* VerbsViewModel.swift in Sources */,
 				C7F9A0C82D70091C00851353 /* String.swift in Sources */,
+				C70751BA2D76310800C9A7E0 /* IrregularVerbsView.swift in Sources */,
 				C74052722D6B07160051E229 /* ExplorerViewModel.swift in Sources */,
+				C7CD89F62D77D72D00C31B0F /* VerbConjugationView.swift in Sources */,
 				C740527B2D6B20F50051E229 /* MeaningsView.swift in Sources */,
 				C74052682D6AE7A50051E229 /* PreviewData.swift in Sources */,
 				C74E5B0F2D6C523E002C01A2 /* DiscoverView.swift in Sources */,

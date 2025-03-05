@@ -30,3 +30,16 @@ extension Example {
 extension [Example] {
     static let mock: [Example] = Word.mock.examples ?? []
 }
+
+extension [VerbConjugation] {
+    static var mock: [VerbConjugation] {
+        let url = Bundle.main.url(forResource: "IrreVerbs", withExtension: "json")!
+        let data = try! Data(contentsOf: url)
+
+        return try! JSONDecoder().decode([VerbConjugation].self, from: data)
+    }
+}
+
+extension VerbConjugation {
+    static let mock = [VerbConjugation].mock.first!
+}

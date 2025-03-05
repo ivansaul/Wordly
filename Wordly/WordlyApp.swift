@@ -25,6 +25,11 @@ extension Container {
             .singleton
     }
 
+    var verbDataService: Factory<VerbDataServiceProtocol> {
+        self { VerbDataService() }
+            .singleton
+    }
+
     var explorerViewModel: Factory<ExplorerViewModel> {
         self { ExplorerViewModel(wordDataService: self.wordDataService()) }
             .cached
@@ -32,6 +37,11 @@ extension Container {
 
     var discoverViewModel: Factory<DiscoverViewModel> {
         self { DiscoverViewModel(wordDataService: self.wordDataService()) }
+            .cached
+    }
+
+    var verbsViewModel: Factory<VerbsViewModel> {
+        self { VerbsViewModel(verbDataService: self.verbDataService()) }
             .cached
     }
 
