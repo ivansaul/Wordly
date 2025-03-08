@@ -1,6 +1,7 @@
 # Custom
 *env.swift
 .DS_Store
+Wordly/Preview\ Content/*.json
 
 # Xcode
 #
