@@ -6,7 +6,7 @@
     <b><a href="#">Wordly | EN ↔ ES</a></b>
 </h1>
 
-A complete offline  `English ↔ Spanish` dictionary app built with **`SwiftUI`.
+A complete offline  `English ↔ Spanish` dictionary app built with `SwiftUI`.
 
 `Wordly` is ideal for learners of English or Spanish. It includes over 5,000 of the most frequently used words (based on the Oxford dictionary), `irregular verbs`, `examples`, `meanings`, `definitions`, and `pronunciations` — all available without an internet connection.
 
